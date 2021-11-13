@@ -13,7 +13,7 @@ StepFunctions から　 Lambda 　への変数を渡す動作確認
     ```json
      "Parameters": {
         "Payload": {
-          "InvokeNumber": "1"
+          "InvokeNumber": 1
         }
     ```
 
@@ -23,7 +23,7 @@ StepFunctions から　 Lambda 　への変数を渡す動作確認
 
     ```go
     type Event struct {
-        Id string `json:"InvokeNumber"`
+        InvokeNumber string `json:"InvokeNumber"`
     }
     ```
 
@@ -31,7 +31,7 @@ StepFunctions から　 Lambda 　への変数を渡す動作確認
 
     ```go
     func Handler(event Event){
-        fmt.Println("InvokeNumber %d", event.Id)
+        fmt.Println("InvokeNumber: ", event.InvokeNumber)
     }
     ```
 

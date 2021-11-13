@@ -1,18 +1,18 @@
-
 package main
 
 import (
 	"fmt"
+
 	"github.com/aws/aws-lambda-go/lambda"
 )
 
 type Event struct {
-	Id string `json:"InvokeNumber"`
+	InvokeNumber int `json:"InvokeNumber"`
 }
 
-func Handler(event Event){
+func Handler(event Event) {
 	fmt.Println("Hello Sfn!!")
-	fmt.Println("InvokeNumber: ", event.Id)
+	fmt.Println("InvokeNumber: ", event.InvokeNumber)
 }
 
 func main() {
