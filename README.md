@@ -22,3 +22,7 @@ StepFunctions から　 Lambda 　への変数を渡す動作確認です。
    ```sh
    make
    ```
+
+# 参考資料
+
+https://qiita.com/yukpiz/items/269277a97053237a6980
