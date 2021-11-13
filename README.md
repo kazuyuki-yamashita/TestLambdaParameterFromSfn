@@ -41,9 +41,12 @@ StepFunctions から　 Lambda 　への変数を渡す動作確認
     make
     ```
 
-```
+# 動作確認
+
+StepFunctions を実行し、Lambda のログから、変数`InvokeNumber`に代入した値が出力されている
+
+![result](./src/img/img2.png)
 
 # 参考資料
 
 https://qiita.com/yukpiz/items/269277a97053237a6980
-```

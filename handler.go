@@ -1,3 +1,4 @@
+
 package main
 
 import (
@@ -11,7 +12,7 @@ type Event struct {
 
 func Handler(event Event){
 	fmt.Println("Hello Sfn!!")
-	fmt.Println("InvokeNumber %d", event.Id)
+	fmt.Println("InvokeNumber: ", event.Id)
 }
 
 func main() {
