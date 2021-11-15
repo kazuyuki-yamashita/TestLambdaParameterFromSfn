@@ -30,7 +30,8 @@ StepFunctions から　 Lambda 　への変数を渡す動作確認
     - 受け取った変数を呼び出す
 
     ```go
-    func Handler(event Event){
+    func Handler(ctx context.Context, event Event) {
+        fmt.Println("Hello Sfn!!")
         fmt.Println("InvokeNumber: ", event.InvokeNumber)
     }
     ```
